@@ -39,8 +39,8 @@
 						<ul class="nav navbar-nav menu_nav justify-content-end">
 							<li class="nav-item"><a class="nav-link page-scroll" href="#home">Home</a></li>
 							<li class="nav-item"><a class="nav-link page-scroll" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link page-scroll" href="#services">Services</a></li>
-							<li class="nav-item"><a class="nav-link page-scroll" href="portfolio.html">Portfolio</a>
+							<li class="nav-item"><a class="nav-link page-scroll" href="#features">Services</a></li>
+							<li class="nav-item"><a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
@@ -78,7 +78,7 @@
 						<div class="banner_content">
 							<h3 class="text-uppercase">Hell0</h3>
 							<h1 class="text-uppercase">I am Zakaria</h1>
-							<h5 class="text-uppercase">Back-End Developer and Mobile Developer</h5>
+							<h5 class="text-uppercase">Back-End Developer and Android Developer</h5>
 							<div class="d-flex align-items-center">
 								<a class="primary_btn" href="#"><span>Hire Me</span></a>
 								<a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
@@ -108,12 +108,13 @@
 
 				<div class="offset-lg-1 col-lg-5">
 					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<p>
-							Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven
-							midst their. Beast creepeth. Fish days.
+						<h2 class="text-uppercase">
+							<span>Let me</span>
+							<span>introduce</span>
+							<span>myself</span>
+						</h2>
+						Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven
+						midst their. Beast creepeth. Fish days.
 						</p>
 						<p>
 							Is give may shall likeness made yielding spirit a itself together created after sea
@@ -129,7 +130,7 @@
 	<!--================ End About Us Area =================-->
 
 	<!--================ Start Features Area =================-->
-	<section class="features_area" id="services">
+	<section class="features_area" id="features">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -145,29 +146,29 @@
 			<div class="row feature_inner">
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
-						<img src="img/services/s1.png" alt="">
-						<h4>Wp developing</h4>
+						<img src="img/services/web.png" alt="">
+						<h4>Back-End Developer</h4>
 						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
-						<img src="img/services/s2.png" alt="">
-						<h4>UI/ux design</h4>
+						<img src="img/services/android.png" alt="">
+						<h4>Android Developer</h4>
 						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
-						<img src="img/services/s3.png" alt="">
-						<h4>Web design</h4>
+						<img src="img/services/videographer.png" alt="">
+						<h4>Videographer</h4>
 						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
-						<img src="img/services/s4.png" alt="">
-						<h4>seo optimize</h4>
+						<img src="img/services/designer.png" alt="">
+						<h4>Designer</h4>
 						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
 					</div>
 				</div>
@@ -412,7 +413,7 @@
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script type="text/javascript">
-		$('.page-scroll').on('click', function (e) {
+		$('.page-scroll').on('click', function () {
 
 			var tujuan = $(this).attr('href');
 
@@ -421,7 +422,7 @@
 			console.log(elemenTujuan.offset().top);
 
 			$('html,body').animate({
-				srollTop: elemenTujuan.offset().top
+				srollTop: elemenTujuan.offset().top - 150
 			}, 1250, 'easeInOutExpo');
 		})
 	</script>

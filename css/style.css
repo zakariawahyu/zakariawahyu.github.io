@@ -2439,6 +2439,9 @@ h6 {
     margin-bottom: 0px; }
     .about_area .main_title p {
       margin-bottom: 20px; }
+      .about_area .main_title h2 > span {
+      font-size: 50px;
+      letter-spacing: 21px; }
   .about_area .primary_btn {
     margin-top: 20px; }
   .about_area .about_img {
@@ -2452,34 +2455,46 @@ h6 {
           height: auto; } }
     @media (max-width: 991px) {
       .about_area .about_img {
-        display: none; } }
+        display: none; }
+      .about_area .main_title h2 > span {
+      font-size: 35px;
+      letter-spacing: 15px; } }
 
 /* End About Us Area css
 ============================================================================================ */
 /* Start Barand Area css
 ============================================================================================ */
 .brand_area {
-  padding-bottom: 170px; }
+  padding-bottom: 170px;
+  }
   @media (max-width: 1199px) {
     .brand_area {
-      padding-bottom: 80px; } }
+      padding-bottom: 80px;} }
 
 /* End Barand Area css
 ============================================================================================ */
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
+  padding-top: 100px;
   padding-bottom: 170px; }
+  .features_area .main_title h2 {
+    font-size: 40px;
+    letter-spacing: 20px; }
   @media (max-width: 1199px) {
     .features_area {
-      padding-bottom: 50px; } }
+      padding-top: 10px;
+      padding-bottom: 50px; }
+    .features_area .main_title h2 {
+    font-size: 30px;
+    letter-spacing: 10px; } }
 
 .feature_item {
   padding: 45px 25px;
   text-align: center;
   background: #f9f9fd;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -2608,9 +2623,11 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
+  padding-top: 100px;
   padding-bottom: 120px; }
   @media (max-width: 991px) {
     .portfolio_area {
+      padding-top: 30px;
       padding-bottom: 50px; } }
   .portfolio_area .filters ul {
     padding-left: 0;
