@@ -1176,7 +1176,8 @@ button:focus {
     padding: 2px 0px; }
 
 .contact_form .form-group {
-  margin-bottom: 10px; }
+
+ }
   .contact_form .form-group .form-control {
     font-size: 13px;
     line-height: 26px;
@@ -2625,6 +2626,17 @@ h6 {
 .portfolio_area {
   padding-top: 100px;
   padding-bottom: 120px; }
+  .portfolio_area .main_title h2 {
+    font-size: 40px;
+    letter-spacing: 15px;
+  }
+    @media (max-width: 1199px) {
+    .portfolio_area {
+      padding-top: 10px;
+      padding-bottom: 50px; }
+    .portfolio_area .main_title h2 {
+    font-size: 30px;
+    letter-spacing: 10px; } }
   @media (max-width: 991px) {
     .portfolio_area {
       padding-top: 30px;
@@ -3052,7 +3064,19 @@ h6 {
   /* Contact Page Area css
   ============================================================================================ */
   .contact_info {
-    margin-bottom: 50px; }
+    margin-bottom: 5px; }
+
+  .contact_area .main_title h2 {
+    font-size: 40px;
+    letter-spacing: 50px; }
+  @media (max-width: 1199px) {
+    .contact_area {
+      padding-top: 10px;
+      padding-bottom: 50px; }
+    .contact_area .main_title h2 {
+    font-size: 30px;
+    letter-spacing: 10px; } }
+    
 
   /* End Contact page Area css
   ============================================================================================ */
@@ -3276,7 +3300,7 @@ h6 {
   .footer_area:before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: 20px;
     left: 0px;
     right: 0px;
     bottom: 0px;
