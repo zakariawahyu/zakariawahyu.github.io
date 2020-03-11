@@ -227,7 +227,7 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 14px/100px "Rubik", sans-serif;
+        font: 500 14px/100px "Roboto", sans-serif;
         text-transform: uppercase;
         color: #000000;
         padding: 0px;
@@ -2943,7 +2943,7 @@ h6 {
     margin-bottom: 23px; }
 
   .header_area .navbar {
-    background: #000; }
+    background: #e4e2e93a; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
@@ -2965,7 +2965,7 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -2990,9 +2990,9 @@ h6 {
     line-height: 40px;
     margin-right: 0px;
     display: block;
-    border-bottom: 1px solid #ededed33;
+    border-bottom: 1px solid #7c2ee03f;
     border-radius: 0px;
-    color: #fff; }
+    color: #000000; }
 
   .header_area .navbar .search {
     margin-left: 0px; }
@@ -3014,11 +3014,11 @@ h6 {
 
   .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px;
-    color: #fff; }
+    color: #000; }
 
   .header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px;
-    color: #fff; }
+    color: #000; }
 
   .header_area.white_menu .navbar .nav .nav-item .nav-link {
     color: #222; }
