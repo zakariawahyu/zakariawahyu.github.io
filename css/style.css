@@ -2707,15 +2707,10 @@ h6 {
     .single_portfolio .icon span {
       font-size: 100px;
       display: inline-block;
-      -webkit-transform: rotate(135deg);
-      -moz-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-      -o-transform: rotate(135deg);
-      transform: rotate(135deg);
       color: #ffffff;
       cursor: pointer; }
   .single_portfolio:hover .overlay {
-    background: rgba(77, 87, 222, 0.5); }
+    background: rgba(6, 10, 65, 0.5); }
   .single_portfolio:hover .icon {
     opacity: 1;
     visibility: visible;
