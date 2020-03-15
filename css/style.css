@@ -2441,8 +2441,8 @@ h6 {
     .about_area .main_title p {
       margin-bottom: 20px; }
       .about_area .main_title h2 > span {
-      font-size: 50px;
-      letter-spacing: 21px; }
+      font-size: 40px;
+      letter-spacing: 20px; }
   .about_area .primary_btn {
     margin-top: 20px; }
   .about_area .about_img {
@@ -2458,7 +2458,7 @@ h6 {
       .about_area .about_img {
         display: none; }
       .about_area .main_title h2 > span {
-      font-size: 35px;
+      font-size: 30px;
       letter-spacing: 15px; } }
 
 /* End About Us Area css
