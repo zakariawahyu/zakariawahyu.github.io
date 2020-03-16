@@ -323,8 +323,25 @@
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio/details-ppsdma.html">PPSDMA bANDUNG</a></h4>
+								<h4><a href="portfolio/details-ppsdma.html">PPSDMA BANDUNG</a></h4>
 								<p>Web, PHP Native, MySQL</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all other">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/karyawanku.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/karyawanku.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-magnifier"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio/details-karyawanku.html">KARYAWANKU</a></h4>
+								<p>Desktop, Java, MySQL, Netbeans</p>
 							</div>
 						</div>
 					</div>
@@ -454,12 +471,46 @@
 	<script src="js/mail-script.js"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
-	<script src="js/smooth-scroll.polyfills.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+
+
 
 	<script>
-		var scroll = new SmoothScroll('a[href*="#"]');
-		var options = { speed: 1000, easing: 'easeInOutQuad' };
-		scroll.animateScroll(options);
+		$('a[href*="#"]')
+			// Remove links that don't actually link to anything
+			.not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function (event) {
+				// On-page links
+				if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+					&&
+					location.hostname == this.hostname
+				) {
+					// Figure out element to scroll to
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					// Does a scroll target exist?
+					if (target.length) {
+						// Only prevent default if animation is actually gonna happen
+						event.preventDefault();
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, function () {
+							// Callback after animation
+							// Must change focus!
+							var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) { // Checking if the target was focused
+								return false;
+							} else {
+								$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+								$target.focus(); // Set focus again
+							};
+						});
+					}
+				}
+			});
 	</script>
 </body>
 
