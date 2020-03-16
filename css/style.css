@@ -2439,12 +2439,12 @@ h6 {
   .about_area .main_title {
     margin-bottom: 0px; }
     .about_area .main_title p {
-      margin-bottom: 20px; }
+      margin-bottom: 10px; }
       .about_area .main_title h2 > span {
       font-size: 40px;
       letter-spacing: 20px; }
   .about_area .primary_btn {
-    margin-top: 20px; }
+    margin-top: 10px; }
   .about_area .about_img {
     position: relative;
     right: 250px; }
@@ -3121,8 +3121,6 @@ h6 {
 
   .home_banner_area .banner_inner .banner_content {
     margin-top: 0px; }
-    .home_banner_area .banner_inner .banner_content .primary_btn {
-      display: none; }
 
   /* Blog Page Area css
   ============================================================================================ */
